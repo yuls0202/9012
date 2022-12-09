@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function shuffle(array){
+            array.sort(()=>Math.random()-0.5);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var numbers=new Array(45);
+        for  (let index=0; index<numbers.length; index++){
+            numbers[index]=index+1;
+        }
+        document.write('numbers='+numbers.toString+'<br>')
+        shuffle(numbers);
+        document.write('numbers='+ numbers.toString());
+    </script>
+</body>
+</html>
